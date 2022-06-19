@@ -19,11 +19,11 @@
       .then((response) => {
         return response.json();
       })
-     .then(function (object) {
+     .then((object) => {
       document.body.innerHTML = object["id"]
      })
 
-     .catch( function (error){
-    document.body.innerHTML = error.message
+     .catch( (error) => {
+       document.body.innerHTML = error.message
      })
   }
